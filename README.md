@@ -1,16 +1,16 @@
-# Week 1 slides for FOAR 705 at Macquarie University. 2019.
+# Job-talk slides for University Data Architect Position
 
-License: CC-BY 4.0 International. Shawn Ross, Brian Ballsun-Stanton, Macquarie University
+A brief on the importance of technology to Research, the utility of Data Science, illustrations of recent research, and policy and strategic discussion.
 
-LaTeX template:
+License: CC-BY 4.0 International. Brian Ballsun-Stanton, Macquarie University
 
-A Beamer Theme for Macquarie University
+LaTeX template: A Beamer Theme for Macquarie University
 
 Forked from [Metropolis](https://github.com/matze/mtheme)
 
 Edits by:
 
-* Brian Ballsun-Stanton (@denubisx)
+* Brian Ballsun-Stanton (@denubis)
 * James Tocknell (@aragilar)
 
 Compile with:
