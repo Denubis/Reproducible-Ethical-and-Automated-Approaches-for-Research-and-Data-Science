@@ -1,0 +1,200 @@
+% Latex template: https://github.com/mqTeXUsers/Macquarie-University-Beamer-Theme
+
+% Slide Masters:
+
+% Title
+% Text
+% 2 column
+% Full-image
+% Bibliography
+% Closing
+ 
+\documentclass[aspectratio=1610, 11pt]{beamer} % Aspect ratio
+% https://tex.stackexchange.com/a/14339/5483 
+% Possible values: 1610, 169, 149, 54, 43 and 32.
+% 169 = 16:9
+
+\PassOptionsToPackage{table}{xcolor}    %https://tex.stackexchange.com/a/5365/5483
+
+\usetheme{macquarie}
+
+% http://texdoc.net/texmf-dist/doc/latex/enumitem/enumitem.pdf
+\setlist{noitemsep}
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=-}
+\mode<presentation>           % Set options
+{
+  \usetheme{default}          % Set theme
+  \usecolortheme{default}         % Set colors
+  \usefonttheme{default}          % Set font theme
+  \setbeamertemplate{caption}[numbered] % Set caption to be numbered
+}
+
+
+\setbeamertemplate{footline}{%
+%\strut~\texttt{https://github.com/MQ-FOAR705/MQ-FOAR705-Week1}%
+\hfill\insertframenumber~/~\inserttotalframenumber\strut~~~
+}
+
+
+\title{Reproducible, Ethical, and Automated Approaches for Research and Data Science} % Presentation title
+\author{Brian Ballsun-Stanton}               % Presentation author
+\institute{Faculty of Arts}         % Author affiliation
+\date{12 August 2020}                 % Today's date  
+
+%https://tex.stackexchange.com/questions/522541/beamer-biblatex-includeonlylecture-works-but-bibliography-global
+\addbibresource{references.bib}
+
+
+\begin{document}
+
+
+
+\maketitle
+
+
+\begin{frame}{Outline of Talk}
+  \tableofcontents
+\end{frame}
+
+%During the presentation, you will present to our eResearch and Data Science Steering Committee (which overlaps in part with the Selection Panel) and includes Associate Deans Research, the Directors of IT, Library, Research Integrity and others. 
+
+%These are the main stakeholders of the role. Professor Amanda Barnier would like each candidate to speak for about 20 minutes and cover: 
+
+    %(1) his or her view of the importance of eResearch and Data Science to modern research practices, 
+    %(2) one or two examples of his or her own research illustrating these practices (whether research he or she has led or research he or she has supported others in conducting), and 
+    %(3) how you can help Macquarie transform its research practices in this space.
+\section{Technologically enabled Research and Data Science}
+
+\subsection{All research uses technology}
+
+\section{Illustrative Examples}
+
+\section{Macquarie's Strategic Transformation}
+
+\subsection{Operating plan: Digital Transformation}
+\begin{frame}{}
+\end{frame}
+
+\subsection{Operating plan: Digital Transformation}
+
+% \section{Research Overview}
+
+% \begin{frame}{An Urgent Request}
+  
+% \end{frame}
+
+
+% \begin{frame}{Right Wing Extremism in New South Wales}
+  
+% \end{frame}
+
+
+
+% \section{Data Collection}
+
+% \begin{frame}{Different approaches by different companies}
+  
+% \end{frame}
+
+
+% \begin{frame}{Facebook}
+  
+% \end{frame}
+
+% \begin{frame}{Twitter}
+  
+% \end{frame}
+
+% \begin{frame}{Gab}
+  
+% \end{frame}
+
+
+
+% \section{Data Preparation}
+
+% \begin{frame}{Qualitative: De-identified snippets}
+  
+% \end{frame}
+
+
+% \begin{frame}{Quantitative: Natural Language Processing}
+  
+% \end{frame}
+
+
+% \section{Automated Analysis}
+
+% \begin{frame}{Lexical Dispersion Plots}
+  
+% \end{frame}
+
+% \begin{frame}{Descriptive Statistics and Graphs}
+  
+% \end{frame}
+
+% \begin{frame}{Wordclouds}
+  
+% \end{frame}
+
+
+% \section{Completing the Data Lifecycle}
+
+% \begin{frame}{Mediated Access for Highly Sensitive Data}
+  
+% \end{frame}
+
+% \section{Lessons for Future Social Media Research}
+
+% \begin{frame}{Read the Terms of Service}
+  
+% \end{frame}
+
+% \begin{frame}{`Medium-rare' data}
+  
+% \end{frame}
+
+
+% \begin{frame}{Operate at Scale}
+  
+% \end{frame}
+
+% \begin{frame}{Interaction modes of companies}
+  
+% \end{frame}
+
+% \begin{frame}{Automate preparation and processing}
+  
+% \end{frame}
+
+
+% \section{References}
+
+% \begin{multicols}{2}[]
+
+% %\bibliographystyle{apalike}
+% \end{multicols}
+
+
+% % \begin{frame}[allowframebreaks]{References}
+  
+% %   \bibliography{references}
+% %   \bibliographystyle{apalike}
+% % \end{frame}
+
+
+\begin{frame}{Thank you!}
+
+% This presentation is available at:
+% \texttt{https://osf.io/...}
+
+A citable resource containing \LaTeX{} source code and this compiled presentation is available at: 
+
+This work is Copyright Brian Ballsun-Stanton. Please do not distribute.
+
+\end{frame}
+
+
+
+\end{document}
