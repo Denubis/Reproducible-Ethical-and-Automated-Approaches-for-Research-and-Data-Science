@@ -128,9 +128,19 @@
 \setbeamerfont{bibliography entry note}{size=\tiny}
 \setbeamerfont{bibliography item}{size=\tiny}
 
-\usepackage{biblatex-chicago}
+\usepackage[authordate,backend=biber]{biblatex-chicago}
 \usepackage{csquotes}
 
+
+% http://texdoc.net/texmf-dist/doc/latex/enumitem/enumitem.pdf
+\setlist{noitemsep}
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=-}
+
+
+\PassOptionsToPackage{table}{xcolor}    %https://tex.stackexchange.com/a/5365/5483
+
+\AtBeginBibliography{\footnotesize}
 \endinput
 
 

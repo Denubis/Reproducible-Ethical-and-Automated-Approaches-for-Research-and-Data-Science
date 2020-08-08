@@ -1,27 +1,12 @@
 % Latex template: https://github.com/mqTeXUsers/Macquarie-University-Beamer-Theme
 
-% Slide Masters:
 
-% Title
-% Text
-% 2 column
-% Full-image
-% Bibliography
-% Closing
- 
 \documentclass[aspectratio=1610, 11pt]{beamer} % Aspect ratio
 % https://tex.stackexchange.com/a/14339/5483 
-% Possible values: 1610, 169, 149, 54, 43 and 32.
-% 169 = 16:9
 
-\PassOptionsToPackage{table}{xcolor}    %https://tex.stackexchange.com/a/5365/5483
 
 \usetheme{macquarie}
 
-% http://texdoc.net/texmf-dist/doc/latex/enumitem/enumitem.pdf
-\setlist{noitemsep}
-\setlist[itemize,1]{label=\textbullet}
-\setlist[itemize,2]{label=-}
 \mode<presentation>           % Set options
 {
   \usetheme{default}          % Set theme
@@ -43,7 +28,7 @@
 \date{12 August 2020}                 % Today's date  
 
 %https://tex.stackexchange.com/questions/522541/beamer-biblatex-includeonlylecture-works-but-bibliography-global
-\addbibresource{references.bib}
+  \addbibresource{references.bib}
 
 
 \begin{document}
@@ -66,185 +51,216 @@
     %(3) how you can help Macquarie transform its research practices in this space.
 \section{Technologically enabled Research and Data Science}
 
-\begin{frame}{All research uses technology}
+\begin{frame}{Technology, Data, Systems}
+
+\textbf{Technology:} \begin{quote}
+... technologies either as
+\textbf{objects} (the stethoscope, the rifle), \textbf{practices} (disciplinary techniques), \textbf{knowledge} (medicine and penology), modes of \textbf{organization} (hospital, school, prison), or frequently,
+by the \textbf{conglomeration} of these. \parencite{Lagdameo2019-sa}
+\end{quote} 
+
+\textbf{Data:}
+\begin{quote}
+Data as objective \textbf{measure}, Data as subjective \textbf{observation}, Data as encoded human \textbf{communication} \parencite{Ballsun-Stanton2012-nx}
+\end{quote}
+
+\textbf{System:}
+\begin{quote}
+According to the
+cybernetician, \textbf{the purpose of a system is what it does.} This is a basic dictum. It stands for a
+bald fact, which makes a better starting point in seeking understanding than the familiar
+attributions of good intentions, prejudices about expectations, moral judgements, or sheer
+ignorance of circumstances. \parencite{Beer2002-tl}
+\end{quote} 
 \end{frame}
 
-\begin{frame}{Avoiding efficiency for efficiency's sake}
-\end{frame}
+\begin{frame}{Ethical Considerations}
 
-\begin{frame}{The replication crisis}
-\end{frame}
+\textbf{Reduce the number of redundant studies because we don't have the data}
+\begin{itemize}
+    \item `As open as possible, as closed as necessary.' \parencite{European_Commission2016-ai}
+    \item The replication crisis and our duties to future scholarship \parencite{Hochstrasser2020-mr,  National_Academies_of_Sciences_Engineering_and_Medicine2019-da, Reed2014-aa, Franco2014-oy}
+    \end{itemize}
+\textbf{Reduce future harm}    
+\begin{itemize}
+    \item National Health and Medical Research Council Compliance
+    \begin{itemize}
+        \item Prevent harm to research subjects.
+        \item Make sure data is robust and available to others in future.
+    \end{itemize}
+    \item Reduce possibility of harm:
+    \begin{itemize}
+        \item Automate protections
+        \item Do not rely on a lack-of-laptops left in taxis
+    \end{itemize}
+    
+    
+\end{itemize}
 
-\begin{frame}{Improving reproducibility}
-\end{frame}
 
-\begin{frame}{Improving ethics}
-\end{frame}
 
-\begin{frame}{Improving automation}
+
+
 \end{frame}
 
 \begin{frame}{Optimising for human attention}
+
+
+\textbf{Humans to figure out what -- computers to do over and over again.}
+
+\begin{itemize}
+    \item Changing journals to submit to should not take a week of re-typesetting!
+    \item Graphs should automatically generate on changes to data! 
+    \item Data should only need to be entered once!
+\end{itemize}
+
+
+
+
+\textbf{FAIR and Reproducible Research}
+
+\textit{Excel delinda est!} Let us code our analyses in a testable way! \parencite{Krugman2013-ju, Ross2020-yg, Bruford2020-tw}
 \end{frame}
 
-\begin{frame}{Optimising for novel research}
+\begin{frame}{Optimising for novel capabilities}
+
+\textbf{New practices + new knowledge + new tools }
+\begin{itemize}
+    \item Human + Computer can extend capabilities of both
+    \item Technology may make novel research possible -- with an awful lot of blind alleys first.
+\end{itemize}
+
+\textbf{Solving the allocation problem is hard}
+\begin{itemize}
+    \item We need to reward research which might fail.
+    \item We need to make failure as cheap, fast, and easy as possible. Reputationally expensive to fail \textit{after} winning the ARC grant.
+\end{itemize}
+
+We increase what we reward -- but are the system's rewards aligned to what we say we want? \parencite{Beer2002-tl}
 \end{frame}
 
 \section{Illustrative Examples}
 
 \begin{frame}{Engagement: Google Arts and Culture and Fabricius}
+
+\begin{itemize}
+    \item \url{artsandculture.google.com/partner/macquarie-university}
+    \begin{itemize}
+    \item Google Arts and Culture: ` is to preserve and bring the world’s art and culture online so it’s accessible to anyone, anywhere.' \parencite{Google_Arts_and_Culture2020-ga}
+    \item 15,820 views from 142 countries on MQ's Arts and Culture pages in July
+    \item A link on google.com.au under the search bar on 6 August: `Discover the language of the ancient Egyptians: decode hieroglyphs using AI'
+    \end{itemize}
+    \item \url{g.co/fabricius}
+    \begin{itemize}
+    \item Google Cloud Machine Learning + Ancient Egyptian Hieroglyphs
+    \item 230 press stories around world
+    \item Approving tweet to us from Australian ambassador to Egypt
+    \item We have top billing as partner
+    \item Cute extra items to engage social media and encourage kids to learn.
+    \end{itemize}
+\end{itemize}
+
 \end{frame}
 
 \begin{frame}{Impact: Social Media Research for NSW government}
+\textbf{Automated and ethical data collection}
+\begin{itemize}
+    \item APIs to get 1.3 million social media posts
+    \item Python's Natural Langauge Processing + graphing to collect, process, describe, and visualise data.
+\end{itemize}
+\textbf{High impact}
+\begin{itemize}
+    \item Used \LaTeX{} to respond to a ministerial request for a 90 page report in a week. Fully typeset, cross-referenced, cited, branding compliant.
+    \item Presented to Commonwealth committee this week, state committees in July.
+    \item Compliments from the Deputy Minister
+    \item Policy recommendations backed by thorough and reproducible data. 
+\end{itemize}
 \end{frame}
 
 
 \section{Macquarie's Strategic Transformation}
 
-\begin{frame}{Guiding results and measures}
-Relevant operating plan items: 
+\begin{frame}{Advocacy and Advice}
+\textbf{Focused investment in Research result: `Improved access to, and quality of, shared research facilities and infrastructure with a focus on providing institution-level facilities'}
+
 \begin{itemize}
-    \item Focused investment in Research result: `Improved upon the results of ERA and EI 2018'
-    \item Focused investment in Research result: `Improved access to, and quality of, shared research facilities and infrastructure with a focus on providing institution-level facilities'
-    \item Ways of Working measure: `Staff engagement and retention, specifically in career development'
-    \item Digital Transformation measure: `Adoption of new technology and ways of working.'
+    \item We find establishing tools hard
+    \item Persuading joyful adoption is harder -- hard to fake a value proposition except through threat of punishment
 \end{itemize}
 
-Caution via `Goodhart's Law': `When a measure becomes a target, it ceases to be a good measure.'
-
+\textbf{Digital Transformation measure: `Adoption of new technology and ways of working.'}
+\begin{itemize}
+    \item Being a \textit{useful} advocate to solve \textit{specific problems}
+    \item Demonstrate that new systems promise higher reward relative to increased risk
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Research Quality, Engagement and Impact}
+\begin{frame}{Capability-building and Compliance}
+
+\textbf{Focused investment in Research result: `Improved upon the results of ERA and EI 2018'}
+
+\begin{itemize}
+    \item Reduce exposure to data breaches,  scandals, and disruptions to research continuity through data-loss.
+    \item Increase technical options for high engagement and opportunities for impact.
+    \item Show people how to reduce frustration with proper typesetting and citation management.
+\end{itemize}
+\textbf{Ways of Working measure: `Staff engagement and retention, specifically in career development'}
+\begin{itemize}
+    \item The Carpentries is \textit{only a start}. It is necessary but not sufficient.
+    \item Showing faculty and staff how to solve \textit{small} problems with code creates a community and a foundation.
+    \item Guide researchers into considering what tools to learn and use, rather than reaching for comfortable, slow, default.
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Infrastructure use and access}
-\end{frame}
+% \begin{frame}{Guiding results and measures}
+% Relevant operating plan items: 
+% \begin{itemize}
+%     \item Focused investment in Research result: `Improved upon the results of ERA and EI 2018'
+%     \item Focused investment in Research result: `Improved access to, and quality of, shared research facilities and infrastructure with a focus on providing institution-level facilities'
+%     \item Ways of Working measure: `Staff engagement and retention, specifically in career development'
+%     \item Digital Transformation measure: `Adoption of new technology and ways of working.'
+% \end{itemize}
 
-\begin{frame}{Career development}
-\end{frame}
+% Caution via `Goodhart's Law': `When a measure becomes a target, it ceases to be a good measure.'
 
-\begin{frame}{Adoption of new technology}
-\end{frame}
+% \end{frame}
+
+% \begin{frame}{Research Quality, Engagement and Impact}
+% \end{frame}
+
+% \begin{frame}{Infrastructure use and access}
+% \end{frame}
+
+% \begin{frame}{Career development}
+% \end{frame}
+
+% \begin{frame}{Adoption of new technology}
+% \end{frame}
 % Emergent technologies are assessed and deployed where they add value to education, research, student and engagement
 % Digital skills and capabilities of education and research staff drive the successful transition to digital platforms
 
 
 
 \section{Issues for consideration}
-\begin{frame}{The `I want a website' problem}
+\begin{frame}{Many strategic issues}
+\textbf{Valuing researcher/staff time,  risk-taking, and building general capability}
+\begin{itemize}
+    \item How do we create space for staff to risk their time on novel techniques?
+    \item How do we treat researcher and staff time-value versus money?
+    \item How do we get our system to reward general skill/capability building?
+\end{itemize}
+    
+\textbf{Pay attention to university feedback and reward loops}    
+    \begin{itemize}
+    \item What, specifically, do we reward -- and does it support better data practices?
+    \item What are our feedback loops? How long to learn about failure?
+\end{itemize}
+
+
+Caution via `Goodhart's Law': 'When a measure becomes a target, it ceases to be a good measure.` \parencite{Strathern1997-du, Goodhart1975-cq}
+
 \end{frame}
-\begin{frame}{Risk budget}
-\end{frame}
-\begin{frame}{Time and commitments}
-\end{frame}
-\begin{frame}{Feedback and reward loops}
-\end{frame}
 
-
-% \section{Research Overview}
-
-% \begin{frame}{An Urgent Request}
-  
-% \end{frame}
-
-
-% \begin{frame}{Right Wing Extremism in New South Wales}
-  
-% \end{frame}
-
-
-
-% \section{Data Collection}
-
-% \begin{frame}{Different approaches by different companies}
-  
-% \end{frame}
-
-
-% \begin{frame}{Facebook}
-  
-% \end{frame}
-
-% \begin{frame}{Twitter}
-  
-% \end{frame}
-
-% \begin{frame}{Gab}
-  
-% \end{frame}
-
-
-
-% \section{Data Preparation}
-
-% \begin{frame}{Qualitative: De-identified snippets}
-  
-% \end{frame}
-
-
-% \begin{frame}{Quantitative: Natural Language Processing}
-  
-% \end{frame}
-
-
-% \section{Automated Analysis}
-
-% \begin{frame}{Lexical Dispersion Plots}
-  
-% \end{frame}
-
-% \begin{frame}{Descriptive Statistics and Graphs}
-  
-% \end{frame}
-
-% \begin{frame}{Wordclouds}
-  
-% \end{frame}
-
-
-% \section{Completing the Data Lifecycle}
-
-% \begin{frame}{Mediated Access for Highly Sensitive Data}
-  
-% \end{frame}
-
-% \section{Lessons for Future Social Media Research}
-
-% \begin{frame}{Read the Terms of Service}
-  
-% \end{frame}
-
-% \begin{frame}{`Medium-rare' data}
-  
-% \end{frame}
-
-
-% \begin{frame}{Operate at Scale}
-  
-% \end{frame}
-
-% \begin{frame}{Interaction modes of companies}
-  
-% \end{frame}
-
-% \begin{frame}{Automate preparation and processing}
-  
-% \end{frame}
-
-
-% \section{References}
-
-% \begin{multicols}{2}[]
-
-% %\bibliographystyle{apalike}
-% \end{multicols}
-
-
-% % \begin{frame}[allowframebreaks]{References}
-  
-% %   \bibliography{references}
-% %   \bibliographystyle{apalike}
-% % \end{frame}
 
 
 \begin{frame}{Thank you!}
@@ -254,9 +270,24 @@ Caution via `Goodhart's Law': `When a measure becomes a target, it ceases to be 
 
 A citable resource containing \LaTeX{} source code and this compiled presentation is available at: \url{https://osf.io/y5c7n/}
 
-This work is CC-BY-SA 4.0 International, Brian Ballsun-Stanton. 
+This work is licensed CC-BY-SA 4.0 International, by: Brian Ballsun-Stanton. 
 
 \end{frame}
+
+
+\setbeamertemplate{footline}{%
+%\strut~\texttt{https://github.com/MQ-FOAR705/MQ-FOAR705-Week1}%
+
+}
+
+\begin{frame}[allowframebreaks, noframenumbering]{References}
+%\begin{multicols*}{2}
+%\raggedcolumns
+\printbibliography[heading=none]
+%\end{multicols*}
+\end{frame}
+
+
 
 
 
