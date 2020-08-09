@@ -65,8 +65,8 @@
     %     \usebeamerfont{title}\usebeamercolor{title}\inserttitle%
     %     \end{beamercolorbox}%
     %   };
-    \coordinate (dmt1) at (0,9);
-    \coordinate (dmt2) at (16,5);
+    \coordinate (dmt1) at (0,.85\paperheight);
+    \coordinate (dmt2) at (\paperwidth,.6\paperheight);
     \node[rectangle,minimum width=\textwidth] [fit = (dmt1) (dmt2)] (bxt4) {};
     \node[align=left, text width=\textwidth] at (bxt4.center) {%
         % \begin{beamercolorbox}[wd=\textwidth]{title page header}
@@ -98,11 +98,14 @@
       % \node[inner sep=0, outer sep=0, anchor=south west] at (0,0) {
       %   \includegraphics[width=0.4\paperwidth]{branding/fourTenths.png}
       % };
-      \node[inner sep=0, outer sep=0, anchor=north west] at (0.8\paperwidth,10.1) {
+      \node[inner sep=0, outer sep=0, anchor=north west] at (0.8\paperwidth,\paperheight) {
         \includegraphics[width=0.2\paperwidth]{branding/MQ_MAS_HOR_RGB_POS.pdf}
       };
-      \node[inner sep=0, outer sep=0, anchor=south west] at (-1,-2) {
-        \includegraphics[width=1.1\paperwidth]{branding/sixTenths.png}
+    %   \node[inner sep=0, outer sep=0, anchor=north west] at (-1,.8\paperheight) {
+    %     \includegraphics[width=1.1\paperwidth]{branding/sixTenthsTransparentTop.png}
+    %   };
+      \node[inner sep=0, outer sep=0, anchor=north west] at (-.5,.6\paperheight) {
+        \includegraphics[width=1.05\paperwidth]{branding/sixTenths.png}
       };
     \end{tikzpicture}
 
@@ -228,10 +231,10 @@
       % \node[inner sep=0, outer sep=0, anchor=south west] at (0,0) {
       %   \includegraphics[width=0.4\paperwidth]{branding/fourTenths.png}
       % };
-      \node[inner sep=0, outer sep=0, anchor=north west] at (0.8\paperwidth,10.1) {
+      \node[inner sep=0, outer sep=0, anchor=north west] at (0.8\paperwidth,\paperheight) {
         \includegraphics[width=0.2\paperwidth]{branding/MQ_MAS_HOR_RGB_POS.pdf}
       };
-      \node[inner sep=0, outer sep=0, anchor=south west] at (-0.25,-0.25) {
+      \node[inner sep=0, outer sep=0, anchor=south west] at (-0.3,-0.25) {
         \includegraphics[height=1.05\paperheight]{branding/SideTransparent.png}
       };
     \end{tikzpicture}

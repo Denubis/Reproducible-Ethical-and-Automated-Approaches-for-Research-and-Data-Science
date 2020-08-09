@@ -1,7 +1,7 @@
 % Latex template: https://github.com/mqTeXUsers/Macquarie-University-Beamer-Theme
 
 
-\documentclass[aspectratio=1610, 11pt]{beamer} % Aspect ratio
+\documentclass[aspectratio=169, 11pt]{beamer} % Aspect ratio
 % https://tex.stackexchange.com/a/14339/5483 
 
 
@@ -50,7 +50,7 @@
 
 \begin{figure}
 
-    \begin{subfigure}{.2\textwidth}
+    \begin{subfigure}{.19\textwidth}
     \centering
     %\includegraphics[width=\linewidth]{figures/truck.jpg}
     \adjincludegraphics[width=\linewidth,height=\linewidth,trim={{.25\width} 0 {.25\width} 0},clip]{figures/truck.jpg}
@@ -65,7 +65,7 @@
     \caption{onwork.edu.au, indexing 2000 citations}
     \end{subfigure}%
     \hfill%
-    \begin{subfigure}{.25\textwidth}
+    \begin{subfigure}{.19\textwidth}
     \centering
     \includegraphics[width=\linewidth]{figures/gac-screenshot.png}
     \caption{MQ's Partnership with Google Arts \& Culture. 15,820 views in July 2020 }
@@ -106,8 +106,7 @@ Data as objective \textbf{measure}, Data as subjective \textbf{observation}, Dat
 According to the
 cybernetician, \textbf{the purpose of a system is what it does.} This is a basic dictum. It stands for a
 bald fact, which makes a better starting point in seeking understanding than the familiar
-attributions of good intentions, prejudices about expectations, moral judgements, or sheer
-ignorance of circumstances. \parencite{Beer2002-tl}
+attributions of good intentions, prejudices about expectations... \parencite{Beer2002-tl}
 \end{quote} 
 \end{frame}
 
@@ -123,7 +122,7 @@ ignorance of circumstances. \parencite{Beer2002-tl}
 % QLD Health breach article. \parencite{Bavas2019-xc}}
 % }
 
-\vspace{5mm}
+%\vspace{5mm}
 \begin{columns}[t]
 \begin{column}{.35\textwidth}
 \textbf{Reduce harm to participants, researchers, institutions}    
@@ -142,10 +141,12 @@ ignorance of circumstances. \parencite{Beer2002-tl}
     
     
 \end{itemize}
+\vfill
 \end{column}
 \begin{column}{.3\textwidth}
 \begin{figure}
     \centering
+    \vspace{-8mm}
     \includegraphics[width=\linewidth]{figures/qld-breach.png}
     \caption{QLD Health breach. \parencite{Bavas2019-xc}}
 \end{figure}
@@ -154,6 +155,7 @@ ignorance of circumstances. \parencite{Beer2002-tl}
 
 \begin{figure}
     \centering
+    \vspace{-8mm}
     \includegraphics[width=\linewidth]{figures/uw.png}
      %\adjincludegraphics[width=\linewidth,trim={0 {.2\linewidth} 0 0},clip]{figures/uw.png}
     \caption{Consequences of drives left in a safe. \parencite{Davis2020-jr}}
@@ -166,8 +168,14 @@ ignorance of circumstances. \parencite{Beer2002-tl}
 
 \end{frame}
 
+
+\setbeamertemplate{footline}{%
+%\strut~\texttt{https://github.com/MQ-FOAR705/MQ-FOAR705-Week1}%
+Photo by Franck V on Unplash, https://unsplash.com/photos/U3sOwViXhkY\hfill\insertframenumber~/~\inserttotalframenumber\strut~~~
+}
+
 {\usebackgroundtemplate{%
-\includegraphics[height=\paperheight]{figures/franck-v-U3sOwViXhkY-unsplash.png}
+\includegraphics[width=\paperwidth]{figures/franck-v-U3sOwViXhkY-unsplash.png}
 }%
 \begin{frame}{Optimising for human attention}
 
@@ -195,6 +203,11 @@ ignorance of circumstances. \parencite{Beer2002-tl}
 
 \end{frame}}
 
+\setbeamertemplate{footline}{%
+%\strut~\texttt{https://github.com/MQ-FOAR705/MQ-FOAR705-Week1}%
+\hfill\insertframenumber~/~\inserttotalframenumber\strut~~~
+}
+
 \begin{frame}{Optimising for novel capabilities}
 
 \textbf{New practices + new knowledge + new tools }
@@ -212,9 +225,14 @@ ignorance of circumstances. \parencite{Beer2002-tl}
 We increase what we reward -- but are the system's rewards aligned to what we say we want? \parencite{Beer2002-tl}
 \end{frame}
 
-\section{Illustrative Examples}
+\section{Illustrative Examples}%
+\setbeamertemplate{footline}{%
+%\strut~\texttt{https://github.com/MQ-FOAR705/MQ-FOAR705-Week1}%
+Fabricius Workbench photo, Apache 2 license\hfill\insertframenumber~/~\inserttotalframenumber\strut~~~
+}
 {\usebackgroundtemplate{%
-\includegraphics[height=\paperheight]{figures/fabricius.png}
+\centering
+\includegraphics[width=\paperwidth]{figures/fabricius.png}%
 }%
 \begin{frame}{Engagement: Google Arts and Culture and Fabricius}
 
@@ -236,7 +254,10 @@ We increase what we reward -- but are the system's rewards aligned to what we sa
 \end{itemize}
 
 \end{frame}}
-
+\setbeamertemplate{footline}{%
+%\strut~\texttt{https://github.com/MQ-FOAR705/MQ-FOAR705-Week1}%
+\hfill\insertframenumber~/~\inserttotalframenumber\strut~~~
+}
 \begin{frame}{Impact: Social Media Research for NSW government}
 \textbf{Automated and ethical data collection}
 \begin{itemize}
@@ -279,6 +300,9 @@ We increase what we reward -- but are the system's rewards aligned to what we sa
     \item Increase technical options for high engagement and opportunities for impact.
     \item Show people how to reduce frustration with proper typesetting and citation management.
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Capability-building and Compliance}
 \textbf{Ways of Working measure: `Staff engagement and retention, specifically in career development'}
 \begin{itemize}
     \item The Carpentries is \textit{only a start}. It is necessary but not sufficient.
@@ -286,6 +310,7 @@ We increase what we reward -- but are the system's rewards aligned to what we sa
     \item Guide researchers into considering what tools to learn and use, rather than reaching for comfortable, slow, default.
 \end{itemize}
 \end{frame}
+
 
 % \begin{frame}{Guiding results and measures}
 % Relevant operating plan items: 
