@@ -141,6 +141,17 @@
 \PassOptionsToPackage{table}{xcolor}    %https://tex.stackexchange.com/a/5365/5483
 
 \AtBeginBibliography{\footnotesize}
+
+\usepackage{subcaption}
+\usepackage[font=footnotesize]{caption}
+
+%\usepackage[export]{adjustbox}
+
+\let\realparencite\parencite
+\renewcommand*{\parencite}[1]{{\footnotesize\textit{\realparencite{#1}}}}
+\usepackage{wrapfig}
+\backgroundsetup{contents={}}
+
 \endinput
 
 

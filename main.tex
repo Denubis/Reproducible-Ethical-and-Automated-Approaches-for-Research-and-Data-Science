@@ -37,6 +37,43 @@
 
 \maketitle
 
+\begin{frame}{Introduction}
+\textbf{Dr Brian Ballsun-Stanton -- Solutions Architect (Digital Humanities)}
+\begin{multicols}{2}
+\begin{itemize}
+    \item PhD UNSW 2012 in the Philosophy of Data. 
+    \item BS and MS at Rochester Institute of Technology in Info Tech.
+    \item \$2,262,449 in Grants and Prizes
+    \item 23 Projects across the faculty since 2017 including Philosophy, Security Studies, and Ancient History.
+\end{itemize}
+\end{multicols}
+
+\begin{figure}
+
+    \begin{subfigure}{.2\textwidth}
+    \centering
+    %\includegraphics[width=\linewidth]{figures/truck.jpg}
+    \adjincludegraphics[width=\linewidth,height=\linewidth,trim={{.25\width} 0 {.25\width} 0},clip]{figures/truck.jpg}
+
+    \caption{63 field data collection projects}
+    \end{subfigure}%https://www.overleaf.com/project/5f27849a137f300001cd5264
+    \hfill%
+    \begin{subfigure}{.19\textwidth}
+
+    \includegraphics[width=\linewidth]{figures/onwork-screenshot.png}
+    %\adjincludegraphics[width=\linewidth,trim={0 0 0 {.5\linewidth}},clip]{figures/onwork-screenshot.png}
+    \caption{onwork.edu.au, indexing 2000 citations}
+    \end{subfigure}%
+    \hfill%
+    \begin{subfigure}{.25\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/gac-screenshot.png}
+    \caption{MQ's Partnership with Google Arts \& Culture. 15,820 views in July 2020 }
+    \end{subfigure}
+    \caption{Images from recent projects}
+\end{figure}
+
+\end{frame}
 
 \begin{frame}{Outline of Talk}
   \tableofcontents
@@ -81,28 +118,57 @@ ignorance of circumstances. \parencite{Beer2002-tl}
     \item `As open as possible, as closed as necessary.' \parencite{European_Commission2016-ai}
     \item The replication crisis and our duties to future scholarship \parencite{Hochstrasser2020-mr,  National_Academies_of_Sciences_Engineering_and_Medicine2019-da, Reed2014-aa, Franco2014-oy}
     \end{itemize}
-\textbf{Reduce future harm}    
+
+% \mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\begin{figure}\includegraphics[width=.25\linewidth]{figures/qld-breach.png}
+% QLD Health breach article. \parencite{Bavas2019-xc}}
+% }
+
+\vspace{5mm}
+\begin{columns}[t]
+\begin{column}{.35\textwidth}
+\textbf{Reduce harm to participants, researchers, institutions}    
 \begin{itemize}
-    \item National Health and Medical Research Council Compliance
-    \begin{itemize}
-        \item Prevent harm to research subjects.
-        \item Make sure data is robust and available to others in future.
-    \end{itemize}
-    \item Reduce possibility of harm:
-    \begin{itemize}
-        \item Automate protections
-        \item Do not rely on a lack-of-laptops left in taxis
-    \end{itemize}
+    \item Automation
+    \item NHMRC Compliance
+    % \begin{itemize}
+    %     \item Prevent harm to research subjects.
+    %     \item Make sure data is robust and available to others in future.
+    % \end{itemize}
+    \item Reduce impact of breaches
+    % \begin{itemize}
+    %     \item Automate protections to lower workload
+    %     \item Do not rely on a lack-of-laptops left in taxis
+    % \end{itemize}
     
     
 \end{itemize}
+\end{column}
+\begin{column}{.3\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/qld-breach.png}
+    \caption{QLD Health breach. \parencite{Bavas2019-xc}}
+\end{figure}
+\end{column}
+\begin{column}{.3\textwidth}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/uw.png}
+     %\adjincludegraphics[width=\linewidth,trim={0 {.2\linewidth} 0 0},clip]{figures/uw.png}
+    \caption{Consequences of drives left in a safe. \parencite{Davis2020-jr}}
+\end{figure}
 
+\end{column}
+\end{columns}
 
 
 
 \end{frame}
 
+{\usebackgroundtemplate{%
+\includegraphics[height=\paperheight]{figures/franck-v-U3sOwViXhkY-unsplash.png}
+}%
 \begin{frame}{Optimising for human attention}
 
 
@@ -119,8 +185,15 @@ ignorance of circumstances. \parencite{Beer2002-tl}
 
 \textbf{FAIR and Reproducible Research}
 
-\textit{Excel delinda est!} Let us code our analyses in a testable way! \parencite{Krugman2013-ju, Ross2020-yg, Bruford2020-tw}
-\end{frame}
+\begin{itemize}
+    \item \textit{Excel delinda est!} Let us code our analyses in a testable way! \parencite{Krugman2013-ju, Ross2020-yg, Bruford2020-tw}
+    \item Directly and specifically reward data reuse.
+    \item Promote reproducing studies as a valid MRes option. \parencite{Spring2018-kr}
+\end{itemize}
+
+
+
+\end{frame}}
 
 \begin{frame}{Optimising for novel capabilities}
 
@@ -140,7 +213,9 @@ We increase what we reward -- but are the system's rewards aligned to what we sa
 \end{frame}
 
 \section{Illustrative Examples}
-
+{\usebackgroundtemplate{%
+\includegraphics[height=\paperheight]{figures/fabricius.png}
+}%
 \begin{frame}{Engagement: Google Arts and Culture and Fabricius}
 
 \begin{itemize}
@@ -160,7 +235,7 @@ We increase what we reward -- but are the system's rewards aligned to what we sa
     \end{itemize}
 \end{itemize}
 
-\end{frame}
+\end{frame}}
 
 \begin{frame}{Impact: Social Media Research for NSW government}
 \textbf{Automated and ethical data collection}
