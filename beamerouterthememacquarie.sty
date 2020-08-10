@@ -96,11 +96,13 @@
         \node[text width=0.8\paperwidth,right, anchor=north west] at (.85,0.825) {%
          \insertframetitle%
         };
-           \node[inner sep=0, outer sep=0, anchor=north west] at (0.8\paperwidth,1.1) {
+        \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
+    \node[inner sep=0, outer sep=0, anchor=south west] at (0.8\paperwidth,-0.1) {%
         \includegraphics[width=0.2\paperwidth]{branding/MQ_MAS_HOR_RGB_POS.pdf}
-    };
+    };       
 
     \end{tikzpicture}
+    
   \end{adjustbox}
 
   % \begin{beamercolorbox}[%

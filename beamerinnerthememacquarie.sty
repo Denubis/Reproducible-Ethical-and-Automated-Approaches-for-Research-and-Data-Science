@@ -54,6 +54,7 @@
   \nointerlineskip
   \begin{adjustbox}{width=\paperwidth,center}
     \begin{tikzpicture}
+      every node/.style={inner sep=0,outer sep=0}
       \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
       \fill[color=mqSand] (0,0) rectangle (\paperwidth, \paperheight);
   %    \hskip-10pt
@@ -66,7 +67,7 @@
     %     \end{beamercolorbox}%
     %   };
     \coordinate (dmt1) at (0,.85\paperheight);
-    \coordinate (dmt2) at (\paperwidth,.6\paperheight);
+    \coordinate (dmt2) at (\paperwidth,.55\paperheight);
     \node[rectangle,minimum width=\textwidth] [fit = (dmt1) (dmt2)] (bxt4) {};
     \node[align=left, text width=\textwidth] at (bxt4.center) {%
         % \begin{beamercolorbox}[wd=\textwidth]{title page header}
@@ -80,9 +81,9 @@
          }%
         % \end{beamercolorbox}%
     };
+
     %   \node[text width=0.8\paperwidth,right, anchor=north west] at (0.5,7cm) {
     %     \begin{beamercolorbox}[wd=\textwidth]{author}
-          
     %     \end{beamercolorbox}
     %   };
     %   \node[text width=0.8\paperwidth,right, anchor=north west] at (0.5,6cm) {
@@ -98,14 +99,20 @@
       % \node[inner sep=0, outer sep=0, anchor=south west] at (0,0) {
       %   \includegraphics[width=0.4\paperwidth]{branding/fourTenths.png}
       % };
-      \node[inner sep=0, outer sep=0, anchor=north west] at (0.8\paperwidth,\paperheight) {
-        \includegraphics[width=0.2\paperwidth]{branding/MQ_MAS_HOR_RGB_POS.pdf}
-      };
+    %   \node[inner sep=0, outer sep=0, anchor=north west] at (0.8\paperwidth,1.011\paperheight) {
+    %     \includegraphics[width=0.2\paperwidth]{branding/MQ_MAS_HOR_RGB_POS.pdf}
+    %   };
+    %\useasboundingbox (0,0) rectangle(\paperwidth,\paperheight);
+
     %   \node[inner sep=0, outer sep=0, anchor=north west] at (-1,.8\paperheight) {
     %     \includegraphics[width=1.1\paperwidth]{branding/sixTenthsTransparentTop.png}
     %   };
-      \node[inner sep=0, outer sep=0, anchor=north west] at (-.5,.6\paperheight) {
+      \node[inner sep=0, outer sep=0, anchor=north east] at (1.025\paperwidth, .55\paperheight) {%
         \includegraphics[width=1.05\paperwidth]{branding/sixTenths.png}
+        %\adjincludegraphics[width=1.06\paperwidth,trim={0 0 {.5\pageheight} 0},clip]{branding/sixTenths.png}
+      };
+          \node[inner sep=0, outer sep=0, anchor=north east] at (\paperwidth, 1.0115\paperheight) {%
+        \includegraphics[width=0.2\paperwidth]{branding/MQ_MAS_HOR_RGB_POS.pdf}
       };
     \end{tikzpicture}
 
@@ -231,7 +238,7 @@
       % \node[inner sep=0, outer sep=0, anchor=south west] at (0,0) {
       %   \includegraphics[width=0.4\paperwidth]{branding/fourTenths.png}
       % };
-      \node[inner sep=0, outer sep=0, anchor=north west] at (0.8\paperwidth,\paperheight) {
+      \node[inner sep=0, outer sep=0, anchor=north west] at (0.8\paperwidth,1.0115\paperheight) {
         \includegraphics[width=0.2\paperwidth]{branding/MQ_MAS_HOR_RGB_POS.pdf}
       };
       \node[inner sep=0, outer sep=0, anchor=south west] at (-0.3,-0.25) {
