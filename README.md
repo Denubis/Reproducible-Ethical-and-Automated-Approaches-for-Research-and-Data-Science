@@ -2,6 +2,8 @@
 
 A brief on the importance of technology to Research, the utility of Data Science, illustrations of recent research, and policy and strategic discussion.
 
+Check the releases page for PDFs.
+
 License: CC-BY 4.0 International. Brian Ballsun-Stanton, Macquarie University
 
 LaTeX template: A Beamer Theme for Macquarie University
